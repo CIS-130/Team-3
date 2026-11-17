@@ -94,11 +94,18 @@ main {
     font-size: 1.6;
     color: var(--primary-color);
     margin-bottom: 0.5rem;
+    text-decoration: underline;
 }
 
 h2  {
     font-weight: bold;
     font-style: italic;
+    padding: 0.5rem 0;
+}
+
+h3 {
+    font-weight: bold;
+    padding: 0.5rem 0;
 }
 
 /* Button properties */
