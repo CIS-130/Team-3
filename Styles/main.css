@@ -1,0 +1,149 @@
+/* CSS Document starter*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables for colors and background image */
+:root {
+    --primary-color: #142d4e;
+    --secondary-color: #b45309;
+    --font-color: #1f2937;
+    background-image: url("../images/greferente-abstract-3490846_1920.png");
+    --background-color: #ffffffa8;
+    --link-color: #ffffff;
+}
+
+/*Image properties and underlying text*/
+figure {
+    text-align: center;
+    width: 100%;
+    & img { 
+        width: 100%;
+}
+
+& figcaption {
+    display: block;
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: .5em;
+}
+}
+
+/* Navigation bar properties */
+ul { 
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+li {
+    margin: 1px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    outline: 3px var(--secondary-color);
+    outline-offset: 5px;
+    outline-color: var(--secondary-color);
+    color: var(--link-color);
+    text-underline-offset: 4px;
+}
+
+a:hover, a[aria-current="page"] {
+    outline: 1px solid var(--primary-color);
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    flex-wrap: wrap;
+    text-decoration: underline;
+    
+}
+/* Main content properties */
+@media screen and (min-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+main > section { flex: 1 1 200px; }
+
+main { 
+    clear:both;
+    width: min(100% - 2rem, 1100px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+    color: var(--font-color);
+    background-color: var(--background-color);
+}
+
+.section-title {
+    font-size: 1.6;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+h2  {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Button properties */
+.inner-link {
+    text-decoration: underline;
+    display: inline-block;
+    border: 0;
+    color: white;
+    line-height: 2;
+    line-weight: bold;
+    padding: 0 20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px var(--primary-color);
+    background-image: linear-gradient( 
+        to top left, 
+        var(--primary-color) 50%,
+        var(--primary-color) 20%,
+        transparent
+    );
+    box-shadow: inset 2px 2px 3px var(--primary-color) 20%, 
+        inset -2px -2px 3px var(--primary-color) 20%;
+}
+
+.inner-link:hover {
+   background-color: #10386c9f;
+}
+
+.inner-link:active {
+    box-shadow:
+     inset -2px -2px 3px var(--primary-color), 
+        inset 2px 2px 3px var(--primary-color);
+}
+
+/* Footer and header properties */
+footer, header
+    { 
+    text-align: left;
+    font-weight: bold;
+    padding: 24px;
+    color: var(--link-color);
+    background-color: #142d4e;
+    text-align: center;
+}
+
+#copyright {
+    font-size: 70%;
+}
+
