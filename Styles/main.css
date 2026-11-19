@@ -106,6 +106,18 @@ h2  {
 h3 {
     font-weight: bold;
     padding: 0.5rem 0;
+    text-decoration: underline;
+}
+
+p { 
+    margin-bottom: 30px;
+}
+
+section#team-members {
+    gap: 1rem;
+    border: 3px dotted var(--secondary-color);
+    margin-bottom: 150px;
+    
 }
 
 /* Button properties */
@@ -115,7 +127,7 @@ h3 {
     border: 0;
     color: white;
     line-height: 2;
-    line-weight: bold;
+    font-weight: bold;
     padding: 0 20px;
     text-align: center;
     text-shadow: 1px 1px 1px var(--primary-color);
